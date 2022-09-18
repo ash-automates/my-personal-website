@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <header className="bg-red-600">
-      <nav className="container mx-auto flex justify-between text-white">
+    <header className="bg-blue-400">
+      <nav className="container mx-auto flex justify-between text-green-100">
         <Link href="/">
           <a className="inline-flex items-center py-3 my-3 px-3 ml-1 rounded font-bold text-xl hover:bg-red-300">
             Hachem S.
