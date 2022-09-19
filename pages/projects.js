@@ -5,12 +5,10 @@ export async function getStaticProps() {
     `*[_type == "project"]{
       title,
       date,
-      place,
-      language,
+      stack,
       description,
-      projectType,
-      link,
-      tags
+      source_code,
+      link
     }`
   );
   return {
@@ -46,8 +44,8 @@ const Projects = ({ projects }) => {
                   {new Date(project.date).toLocaleDateString()}
                 </span>
                 <span>
-                  <strong className="font-bold">Type</strong>:{" "}
-                  {project.projectType}
+                  <strong className="font-bold">Built with:</strong>:{" "}
+                  {project.stack}
                 </span>
               </div>
               <p className="my-6 text-sm text-green-100 leading-relaxed">
@@ -60,7 +58,7 @@ const Projects = ({ projects }) => {
               <div className="flex justify-start space-x-4">
                 <div>
                   <a
-                    href={project.link}
+                    href={project.source_code}
                     rel="noopener noreferrer"
                     target="_blank"
                     className="text-green-100 font-bold hover:text-blue-400"

@@ -5,7 +5,7 @@ const Layout = (props) => {
   return (
     <>
       <Head>
-        <title>Hachem&apos;s Portfolio</title>
+        <title>Hachem Sekki | Software Engineer</title>
       </Head>
       <NavBar />
       {props.children}
